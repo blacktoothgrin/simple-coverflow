@@ -1,0 +1,63 @@
+@media screen
+{
+  *{margin:0;padding:0;}
+  body#portrait{background:#000;overflow: hidden; background:rgb(24,100,164);width: 320px;min-height:500px;font-family:"Lucida Sans",arial;color:#ffffff;font-size:12px;}
+  	body#portrait .wrapper1{display:block;width:320px;height:480px;}
+	body#portrait .wrapper2{display:none;}
+  body#landscape{
+  	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0A0A0A), to(#0F0F0F));
+	min-width: 480px;min-height:320px;
+  }
+  	body#landscape .wrapper1{display:none;}
+	body#landscape .wrapper2{display:block;width: 480px;height: 320px;}
+
+  #header{background: #ffffff url(../images/rm_header.jpg) 0 0 no-repeat;height: 317px;width: 100%;}
+  	#header a{display: block;width:100%;height:100%;}
+  #video{background: #ffffff url(../images/rm_video.jpg) 0 0 no-repeat;height: 102px;width: 100%;}
+
+ #wrapper2{-webkit-perspective: 800;-webkit-perspective-origin-x: 50%;-webkit-perspective-origin-y: 50%;margin:0 auto;}
+  #flip{list-style:none;margin:0 auto;position:relative;min-height: 300px;width:480px;-webkit-transform-style: preserve-3d;}
+
+  #flip li{position:absolute;top:0;left:0;}
+  
+  #flip li.farleft{
+  	z-index: 1;
+	/*left: -50px; top: 30px;*/
+	-webkit-transition: all 0.5s linear;
+  	-webkit-transform: rotateY(55deg) translateX(-60px) translateY(30px) translateZ(15px) scale(0.8);
+  }
+  
+  #flip li.left{
+  	/*left:5px;top:30px;*/
+	z-index: 5;
+	width: 175px;
+  	-webkit-transition: all 0.5s linear;
+	-webkit-transform: rotateY(45deg) translateX(5px) translateY(30px) translateZ(50px) scale(0.9);
+  }
+
+  #flip li.center{
+  	width: 175px;
+  	/*left:150px;top:30px;*/
+  	z-index: 10;
+  	-webkit-transition: all 0.5s linear;
+  	-webkit-transform: translateX(150px) translateY(30px) translateZ(100px) rotateY(0deg) scale(1.1);
+  }
+  #flip li.center > img{
+  }
+
+  #flip li.right{
+  	width: 175px;
+  	/*left:300px;top:30px;*/
+	z-index: 5;
+  	-webkit-transition: all 0.5s linear;
+	-webkit-transform: translateX(300px) translateY(30px) rotateY(-45deg) translateZ(50px) scale(0.9)
+  }
+  
+  #flip li.farright{
+  	z-index: 1;
+  	/*left:355px;top:30px;*/
+  	-webkit-transition: all 0.5s linear;
+	-webkit-transform: translateX(355px) translateY(30px) rotateY(-55deg) translateZ(15px) scale(0.8)
+  }
+  
+  
