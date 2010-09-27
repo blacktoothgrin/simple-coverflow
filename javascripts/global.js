@@ -1,5 +1,5 @@
 /**
- * @author Parag M.
+ * @author Parag Majum.
  */
 
 var CoverFlow = {
@@ -82,6 +82,7 @@ var CoverFlow = {
 };
 
 var setup = function($){
+	// NOTE: '$' here is not jQuery ;)
 	return function() {
 		var flip = document.getElementById('flip');
 		
